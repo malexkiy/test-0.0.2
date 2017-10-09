@@ -31,7 +31,7 @@ int main()
 {
 	int arr[] = { -6, -4, 0, 2, 5, 7, 8, 8, 13, 17 };
 
-	auto found_pair = find_two_elements_with_sum(arr, arr + sizeof(arr) - 1, 5);
+	auto found_pair = find_two_elements_with_sum(arr, arr + sizeof(arr)/sizeof(arr[0]) - 1, 5);
 
 	return 0;
 }
